@@ -5,12 +5,9 @@ import importlib
 import os
 import cv2
 
-
-
-### Change path to images here
 path = 'Images{}*'.format(os.sep)  # Use os.sep, Windows, linux have different path delimiters
 ###
-
+print(path)
 all_submissions = glob.glob('./src/*')
 os.makedirs('./results/', exist_ok=True)
 for idx,algo in enumerate(all_submissions):
